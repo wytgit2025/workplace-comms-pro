@@ -36,21 +36,17 @@
 
 ## 三平台数据接入
 
-| 平台 | 接入方式 | 状态 |
-|---|---|---|
-| 飞书 | `lark-cli task +get-my-tasks` / `lark-cli calendar +agenda` | ✅ 已验证通道可用 |
-| 钉钉 | 钉钉待办 MCP / DWS CLI | 🟡 配好 MCP 即用 |
-| 企业微信 | 企微 OpenClaw 插件 To-Do MCP | 🟡 配好 MCP 即用 |
+| 平台 | 接入方式 |
+|---|---|
+| 飞书 | `lark-cli task +get-my-tasks` / `lark-cli calendar +agenda` |
+| 钉钉 | 钉钉待办 MCP / DWS CLI |
+| 企业微信 | 企微 OpenClaw 插件 To-Do MCP |
 
-没配 MCP 也能用——自动降级为你口述要点、Skill 负责组织成文。
+自动从任务、日历、文档中拉取近期工作数据，对齐后成稿。
 
 ## 安装
 
-### 豆包工作
-
 把 `workplace-comms-pro/` 整个目录放到你的技能目录（如 `.user_skills/`），然后在对话里说"帮我写个周报"即可触发。
-
-### 其他兼容 Agent 环境
 
 本 Skill 遵循开放的 Agent Skills 格式（YAML frontmatter + Markdown），任何支持该格式的 Agent 环境都可加载。
 
